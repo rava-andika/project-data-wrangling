@@ -1,0 +1,39 @@
+﻿peringkat_CDI,nama_provinsi,akses_air,kunci_provinsi,kunci_provinsi_asli,akses_sanitasi,_merge,kode_provinsi,nama_provinsi_resmi,status_referensi,deprivation_air,deprivation_sanitasi,CDI,isu_dominan
+1,PAPUA PEGUNUNGAN,32.89,papua pegunungan,papua pegunungan,16.34,both,95,Papua Pegunungan,both,67.11,83.66,75.38499999999999,Sanitasi
+2,PAPUA TENGAH,83.21,papua tengah,papua tengah,39.73,both,94,Papua Tengah,both,16.790000000000006,60.27,38.53,Sanitasi
+3,PAPUA SELATAN,71.28,papua selatan,papua selatan,65.06,both,93,Papua Selatan,both,28.72,34.94,31.83,Sanitasi
+4,BENGKULU,70.47,bengkulu,bengkulu,85.75,both,17,Bengkulu,both,29.53,14.25,21.89,Air minum
+5,PAPUA BARAT DAYA,80.64,papua barat daya,papua barat daya,79.56,both,96,Papua Barat Daya,both,19.36,20.439999999999998,19.9,Seimbang
+6,PAPUA BARAT,82.95,papua barat,papua barat,78.55,both,92,Papua Barat,both,17.049999999999997,21.450000000000003,19.25,Sanitasi
+7,SUMATERA BARAT,87.26,sumatera barat,sumatera barat,74.59,both,13,Sumatera Barat,both,12.739999999999995,25.409999999999997,19.074999999999996,Sanitasi
+8,KALIMANTAN TENGAH,80.58,kalimantan tengah,kalimantan tengah,83.14,both,62,Kalimantan Tengah,both,19.42,16.86,18.14,Air minum
+9,PAPUA,87.7,papua,papua,76.71,both,91,Papua,both,12.299999999999997,23.290000000000006,17.795,Sanitasi
+10,KALIMANTAN SELATAN,78.27,kalimantan selatan,kalimantan selatan,86.8,both,63,Kalimantan Selatan,both,21.730000000000004,13.200000000000003,17.465000000000003,Air minum
+11,SULAWESI TENGAH,87.55,sulawesi tengah,sulawesi tengah,79.62,both,72,Sulawesi Tengah,both,12.450000000000003,20.379999999999995,16.415,Sanitasi
+12,JAMBI,82.46,jambi,jambi,85.88,both,15,Jambi,both,17.540000000000006,14.120000000000005,15.830000000000005,Air minum
+13,SULAWESI BARAT,83.0,sulawesi barat,sulawesi barat,85.98,both,76,Sulawesi Barat,both,17.0,14.019999999999996,15.509999999999998,Air minum
+14,NUSA TENGGARA TIMUR,89.86,nusa tenggara timur,nusa tenggara timur,80.8,both,53,Nusa Tenggara Timur,both,10.14,19.200000000000003,14.670000000000002,Sanitasi
+15,JAWA BARAT,95.84,jawa barat,jawa barat,76.2,both,32,Jawa Barat,both,4.159999999999997,23.799999999999997,13.979999999999997,Sanitasi
+16,SUMATERA SELATAN,86.82,sumatera selatan,sumatera selatan,85.5,both,16,Sumatera Selatan,both,13.180000000000007,14.5,13.840000000000003,Seimbang
+17,LAMPUNG,85.13,lampung,lampung,87.29,both,18,Lampung,both,14.870000000000005,12.709999999999994,13.79,Air minum
+18,KALIMANTAN BARAT,84.32,kalimantan barat,kalimantan barat,88.37,both,61,Kalimantan Barat,both,15.680000000000007,11.629999999999995,13.655000000000001,Air minum
+19,MALUKU UTARA,90.01,maluku utara,maluku utara,84.12,both,82,Maluku Utara,both,9.989999999999995,15.879999999999995,12.934999999999995,Sanitasi
+20,ACEH,92.06,aceh,aceh,82.21,both,11,Aceh,both,7.939999999999998,17.790000000000006,12.865000000000002,Sanitasi
+21,MALUKU,92.83,maluku,maluku,83.09,both,81,Maluku,both,7.170000000000002,16.909999999999997,12.04,Sanitasi
+22,KALIMANTAN UTARA,91.59,kalimantan utara,kalimantan utara,86.0,both,65,Kalimantan Utara,both,8.409999999999997,14.0,11.204999999999998,Sanitasi
+23,KEP. BANGKA BELITUNG,83.54,kepulauan bangka belitung,kep. bangka belitung,96.45,both,19,Kepulauan Bangka Belitung,both,16.459999999999994,3.549999999999997,10.004999999999995,Air minum
+24,GORONTALO,95.95,gorontalo,gorontalo,84.7,both,75,Gorontalo,both,4.049999999999997,15.299999999999997,9.674999999999997,Sanitasi
+25,SUMATERA UTARA,93.24,sumatera utara,sumatera utara,87.47,both,12,Sumatera Utara,both,6.760000000000005,12.530000000000001,9.645000000000003,Sanitasi
+26,KALIMANTAN TIMUR,88.45,kalimantan timur,kalimantan timur,92.57,both,64,Kalimantan Timur,both,11.549999999999997,7.430000000000007,9.490000000000002,Air minum
+27,SULAWESI UTARA,94.86,sulawesi utara,sulawesi utara,87.72,both,71,Sulawesi Utara,both,5.140000000000001,12.280000000000001,8.71,Sanitasi
+28,JAWA TENGAH,95.73,jawa tengah,jawa tengah,87.51,both,33,Jawa Tengah,both,4.269999999999996,12.489999999999995,8.379999999999995,Sanitasi
+29,RIAU,92.17,riau,riau,91.21,both,14,Riau,both,7.829999999999998,8.790000000000006,8.310000000000002,Seimbang
+30,NUSA TENGGARA BARAT,96.29,nusa tenggara barat,nusa tenggara barat,88.29,both,52,Nusa Tenggara Barat,both,3.7099999999999937,11.709999999999994,7.709999999999994,Sanitasi
+31,KEP. RIAU,94.6,kepulauan riau,kep. riau,90.96,both,21,Kepulauan Riau,both,5.400000000000006,9.040000000000006,7.220000000000006,Sanitasi
+32,JAWA TIMUR,97.3,jawa timur,jawa timur,88.26,both,35,Jawa Timur,both,2.700000000000003,11.739999999999995,7.219999999999999,Sanitasi
+33,BANTEN,96.03,banten,banten,90.71,both,36,Banten,both,3.969999999999999,9.290000000000006,6.630000000000003,Sanitasi
+34,SULAWESI TENGGARA,94.91,sulawesi tenggara,sulawesi tenggara,91.96,both,74,Sulawesi Tenggara,both,5.090000000000003,8.040000000000006,6.565000000000005,Sanitasi
+35,SULAWESI SELATAN,93.25,sulawesi selatan,sulawesi selatan,94.19,both,73,Sulawesi Selatan,both,6.75,5.810000000000002,6.280000000000001,Seimbang
+36,DKI JAKARTA,99.98,daerah khusus ibukota jakarta,dki jakarta,93.98,both,31,Daerah Khusus Ibukota Jakarta,both,0.01999999999999602,6.019999999999996,3.019999999999996,Sanitasi
+37,DI YOGYAKARTA,97.33,daerah istimewa yogyakarta,di yogyakarta,96.94,both,34,Daerah Istimewa Yogyakarta,both,2.6700000000000017,3.0600000000000023,2.865000000000002,Seimbang
+38,BALI,98.75,bali,bali,98.2,both,51,Bali,both,1.25,1.7999999999999972,1.5249999999999986,Seimbang

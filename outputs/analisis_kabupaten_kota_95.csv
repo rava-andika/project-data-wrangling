@@ -1,0 +1,9 @@
+﻿nama_wilayah,kunci_nama_final,akses_air,akses_sanitasi,_merge,kode_kabupaten,nama_kabupaten_resmi,kode_provinsi,nama_provinsi,status_referensi,deprivation_air,deprivation_sanitasi,CDI,isu_dominan,peringkat_CDI
+Nduga,kabupaten|nduga,14.93,4.0,both,95.08,Kabupaten Nduga,95,Papua Pegunungan,both,85.07,96.0,90.535,Sanitasi,1
+Mamberamo Tengah,kabupaten|mamberamo tengah,20.25,6.06,both,95.05,Kabupaten Mamberamo Tengah,95,Papua Pegunungan,both,79.75,93.94,86.845,Sanitasi,2
+Tolikara,kabupaten|tolikara,30.34,1.13,both,95.04,Kabupaten Tolikara,95,Papua Pegunungan,both,69.66,98.87,84.265,Sanitasi,3
+Yalimo,kabupaten|yalimo,31.88,24.1,both,95.06,Kabupaten Yalimo,95,Papua Pegunungan,both,68.12,75.9,72.01,Sanitasi,4
+Yahukimo,kabupaten|yahukimo,44.35,14.36,both,95.03,Kabupaten Yahukimo,95,Papua Pegunungan,both,55.65,85.64,70.645,Sanitasi,5
+Jayawijaya,kabupaten|jayawijaya,50.58,43.7,both,95.01,Kabupaten Jayawijaya,95,Papua Pegunungan,both,49.42,56.3,52.86,Sanitasi,6
+Pegunungan Bintang,kabupaten|pegunungan bintang,76.8,17.88,both,95.02,Kab Pegunungan Bintang,95,Papua Pegunungan,both,23.200000000000003,82.12,52.660000000000004,Sanitasi,7
+Lanny Jaya,kabupaten|lanny jaya,,5.58,both,95.07,Kabupaten Lanny Jaya,95,Papua Pegunungan,both,,94.42,,Data tidak lengkap,
