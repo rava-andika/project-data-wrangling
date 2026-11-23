@@ -25,6 +25,12 @@ share/python-wheels/
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
 
+# Local draft notebooks and root HTML previews
+* - Copy.ipynb
+Pemetaan_*.ipynb
+UAS_*.ipynb
+peta_*.html
+
 # Virtual Environments
 .env
 .venv
@@ -33,10 +39,6 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-
-# Cache data
-data/cache/*
-!data/cache/.gitkeep
 
 # Operating System
 .DS_Store

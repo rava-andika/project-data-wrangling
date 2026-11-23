@@ -80,10 +80,10 @@ Proyek ini mengintegrasikan tiga sumber data resmi tahun 2025:
 | Badan Pusat Statistik (BPS) | Persentase rumah tangga dengan akses air minum layak menurut kabupaten/kota (2025) | CSV | `data/raw/Persentase Rumah Tangga yang Memiliki Akses terhadap Sumber Air Minum Layak menurut Kabupaten_Kota, 2025.csv` |
 | Badan Pusat Statistik (BPS) | Persentase rumah tangga dengan akses sanitasi layak menurut kabupaten/kota (2025) | CSV | `data/raw/6.2.1_ Persentase rumah tangga yang memiliki akses terhadap sanitasi layak menurut kabupaten_kota, 2025.csv` |
 | Badan Pusat Statistik (BPS) | Persentase akses air minum dan sanitasi menurut provinsi dan klasifikasi desa (2025) | XLSX | `data/raw/Persentase Rumah Tangga yang Memiliki Akses terhadap Sumber Air Minum Layak Menurut Provinsi dan Klasifikasi Desa, 2025.xlsx` & sanitasi |
-| Badan Informasi Geospasial (BIG) | Batas administrasi kabupaten/kota seluruh Indonesia (2025) | GeoJSON (Git LFS) | `data/raw/batas_kabupaten_kota.geojson` (diperoleh via `scrap-geojson.ipynb` dari REST API ArcGIS BIG) |
+| Badan Informasi Geospasial (BIG) | Batas administrasi kabupaten/kota seluruh Indonesia (2025) | GeoJSON (Git LFS) | `data/raw/batas_kabupaten_kota.geojson` (diperoleh via `notebooks/scrap-geojson.ipynb` dari REST API ArcGIS BIG) |
 | Kementerian Dalam Negeri | Master kode dan penamaan wilayah administrasi Indonesia (2025) | XLSX | `data/raw/KODE-WILAYAH-KEPMENDAGRI-2025.xlsx` |
 
-Catatan: File `batas_kabupaten_kota.geojson` berukuran sekitar 612 MB dan dikelola menggunakan Git Large File Storage (Git LFS). Repositori menyediakan notebook `scrap-geojson.ipynb` untuk mengunduh ulang layer fitur langsung dari endpoint ArcGIS BIG secara bertahap (batch).
+Catatan: File `batas_kabupaten_kota.geojson` berukuran sekitar 612 MB dan dikelola menggunakan Git Large File Storage (Git LFS). Repositori menyediakan notebook `notebooks/scrap-geojson.ipynb` untuk mengunduh ulang layer fitur langsung dari endpoint ArcGIS BIG secara bertahap (batch).
 
 ## Tahapan Analisis (Data Wrangling Pipeline)
 
@@ -106,11 +106,7 @@ project-data-wrangling/
 ├── .gitignore
 ├── README.md
 ├── requirements.txt
-├── notebook.ipynb
-├── scrap-geojson.ipynb
 ├── data/
-│   ├── cache/
-│   │   └── .gitkeep
 │   └── raw/
 │       ├── 6.2.1_ Persentase rumah tangga yang memiliki akses terhadap sanitasi layak menurut kabupaten_kota, 2025.csv
 │       ├── batas_kabupaten_kota.geojson
@@ -118,6 +114,9 @@ project-data-wrangling/
 │       ├── Persentase Rumah Tangga yang Memiliki Akses terhadap Sanitasi Layak Menurut Provinsi dan Klasifikasi Desa, 2025.xlsx
 │       ├── Persentase Rumah Tangga yang Memiliki Akses terhadap Sumber Air Minum Layak Menurut Provinsi dan Klasifikasi Desa, 2025.xlsx
 │       └── Persentase Rumah Tangga yang Memiliki Akses terhadap Sumber Air Minum Layak menurut Kabupaten_Kota, 2025.csv
+├── notebooks/
+│   ├── notebook.ipynb
+│   └── scrap-geojson.ipynb
 └── outputs/
     ├── analisis_kabupaten_kota_95.csv
     ├── clean_data_kabupaten_kota.csv
@@ -165,13 +164,13 @@ pip install -r requirements.txt
 
 ### 3. Menjalankan Notebook
 
-- Analisis Utama: Jalankan `notebook.ipynb` untuk mereproduksi pipeline data wrangling dari data mentah hingga visualisasi peta interaktif.
-- Pengunduhan Data Spasial (Opsional): Jalankan `scrap-geojson.ipynb` jika ingin memperbarui batas polygon GeoJSON langsung dari server ArcGIS BIG.
+- Analisis Utama: Jalankan `notebooks/notebook.ipynb` untuk mereproduksi pipeline data wrangling dari data mentah hingga visualisasi peta interaktif.
+- Pengunduhan Data Spasial (Opsional): Jalankan `notebooks/scrap-geojson.ipynb` jika ingin memperbarui batas polygon GeoJSON langsung dari server ArcGIS BIG.
 
 Eksekusi notebook dapat dilakukan melalui server Jupyter:
 
 ```bash
-jupyter notebook
+jupyter notebook notebooks/notebook.ipynb
 ```
 
 Atau buka file notebook langsung melalui Visual Studio Code.
