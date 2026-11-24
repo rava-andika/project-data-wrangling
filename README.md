@@ -44,7 +44,7 @@ Tujuan utama proyek ini adalah:
 3. Menghitung tingkat ketertinggalan (deprivation) pada masing-masing sektor serta menyusun Combined Deprivation Index (CDI).
 4. Menentukan isu dominan (kekurangan air minum vs sanitasi) untuk tiap wilayah administratif.
 5. Mengidentifikasi provinsi dengan tingkat deprivasi tertinggi secara nasional, dilanjutkan dengan analisis mendalam pada tingkat kabupaten/kota di provinsi tersebut.
-6. Menerapkan clustering K-Means untuk mengelompokkan profil ketertinggalan wilayah dan menyajikan visualisasi spasial interaktif.
+6. Menerapkan clustering K-Means untuk mengelompokkan profil ketertinggalan wilayah dan menyajikan visualisasi spasial interaktif baik skala provinsi maupun nasional.
 
 ## Metodologi dan Formulasi
 
@@ -96,7 +96,7 @@ Alur kerja dalam proyek ini terbagi menjadi 8 tahapan terstruktur:
 5. Komputasi Deprivation dan Indeks CDI: Menghitung nilai deprivation per sektor, skor CDI nasional/provinsi/kabupaten, dan penentuan kategori isu dominan.
 6. Analisis Statistik dan Evaluasi Outlier: Memeriksa korelasi Pearson antara sektor air dan sanitasi serta mendeteksi outlier menggunakan metode Interquartile Range (IQR).
 7. Segmentasi Wilayah Berbasis K-Means: Melakukan standardisasi fitur (StandardScaler), evaluasi jumlah klaster optimal (Elbow Method dan Silhouette Score), serta pemprofilan klaster wilayah.
-8. Integrasi Geospasial dan Visualisasi Interaktif: Menggabungkan atribut analisis dengan batas polygon GeoJSON untuk menghasilkan peta tematik Folium dan grafik ringkasan.
+8. Integrasi Geospasial dan Visualisasi Interaktif: Menggabungkan atribut analisis dengan batas polygon GeoJSON untuk menghasilkan peta tematik Folium skala provinsi terpilih serta skala nasional, dilengkapi grafik ringkasan.
 
 ## Struktur Direktori
 
@@ -116,6 +116,7 @@ project-data-wrangling/
 │       └── Persentase Rumah Tangga yang Memiliki Akses terhadap Sumber Air Minum Layak menurut Kabupaten_Kota, 2025.csv
 ├── notebooks/
 │   ├── notebook.ipynb
+│   ├── peta-indonesia.ipynb
 │   └── scrap-geojson.ipynb
 └── outputs/
     ├── analisis_kabupaten_kota_95.csv
@@ -126,6 +127,8 @@ project-data-wrangling/
     ├── evaluasi_jumlah_klaster.csv
     ├── korelasi_air_sanitasi.png
     ├── peta_CDI_95.html
+    ├── peta_CDI_nasional_2025.html
+    ├── peta_isu_dominan_nasional_2025.html
     ├── peta_kategori_dominan_95.html
     ├── ranking_CDI_provinsi.csv
     ├── ringkasan_klaster.csv
@@ -164,13 +167,14 @@ pip install -r requirements.txt
 
 ### 3. Menjalankan Notebook
 
-- Analisis Utama: Jalankan `notebooks/notebook.ipynb` untuk mereproduksi pipeline data wrangling dari data mentah hingga visualisasi peta interaktif.
+- Analisis Utama: Jalankan `notebooks/notebook.ipynb` untuk mereproduksi pipeline data wrangling dari data mentah hingga visualisasi peta interaktif provinsi terpilih (Papua Pegunungan).
+- Pemetaan Nasional: Jalankan `notebooks/peta-indonesia.ipynb` untuk membuat peta interaktif choropleth CDI dan kategori isu dominan skala nasional (seluruh kabupaten/kota di Indonesia).
 - Pengunduhan Data Spasial (Opsional): Jalankan `notebooks/scrap-geojson.ipynb` jika ingin memperbarui batas polygon GeoJSON langsung dari server ArcGIS BIG.
 
 Eksekusi notebook dapat dilakukan melalui server Jupyter:
 
 ```bash
-jupyter notebook notebooks/notebook.ipynb
+jupyter notebook
 ```
 
 Atau buka file notebook langsung melalui Visual Studio Code.
@@ -193,7 +197,9 @@ Seluruh artefak hasil eksekusi disimpan secara otomatis di direktori `outputs/` 
 | `evaluasi_jumlah_klaster.csv` | CSV | Evaluasi metrik inertia dan silhouette score pada model K-Means |
 | `ringkasan_klaster.csv` | CSV | Profil statistik rerata deprivation untuk setiap klaster K-Means |
 | `peta_CDI_95.html` | HTML | Peta interaktif choropleth persebaran skor CDI kabupaten/kota di Papua Pegunungan |
-| `peta_kategori_dominan_95.html` | HTML | Peta interaktif kategori isu dominan (Air Minum vs Sanitasi vs Seimbang) |
+| `peta_kategori_dominan_95.html` | HTML | Peta interaktif kategori isu dominan (Air Minum vs Sanitasi vs Seimbang) Papua Pegunungan |
+| `peta_CDI_nasional_2025.html` | HTML | Peta interaktif choropleth persebaran skor CDI seluruh kabupaten/kota di Indonesia (skala nasional) |
+| `peta_isu_dominan_nasional_2025.html` | HTML | Peta interaktif kategori isu dominan seluruh kabupaten/kota di Indonesia (skala nasional) |
 | `clustering_kmeans_deprivation.png` | PNG | Visualisasi sebaran klaster wilayah pada ruang dimensi deprivation |
 | `top15_provinsi_CDI_2025.png` | PNG | Diagram batang 15 provinsi dengan skor CDI tertinggi di Indonesia |
 | `korelasi_air_sanitasi.png` | PNG | Grafik regresi dan korelasi antara indikator air minum dan sanitasi |

@@ -25,11 +25,12 @@ share/python-wheels/
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
 
-# Local draft notebooks and root HTML previews
-* - Copy.ipynb
-Pemetaan_*.ipynb
-UAS_*.ipynb
-peta_*.html
+# Local draft files in root
+/* - Copy.ipynb
+/Pemetaan_*.ipynb
+/UAS_*.ipynb
+/peta_choropleth_cdi.html
+/peta_isu_dominan.html
 
 # Virtual Environments
 .env
