@@ -206,7 +206,7 @@ Seluruh artefak hasil eksekusi disimpan secara otomatis di direktori `outputs/` 
 
 ## Keterbatasan Analisis
 
-1. Pembobotan Setara: CDI memberikan bobot yang sama (50 persen : 50 persen) pada dimensi air minum dan sanitasi, serta bukan merupakan indikator resmi kemiskinan multidimensi dari instansi pemerintah.
+1. Pembobotan Setara: CDI memberikan bobot yang sama (50 : 50) pada dimensi air minum dan sanitasi, serta bukan merupakan indikator resmi kemiskinan multidimensi dari instansi pemerintah.
 2. Perlakuan Nilai Hilang: Daerah yang memiliki indikator kosong pada salah satu dimensi tidak dihitung nilai CDI-nya untuk menghindari bias estimasi.
 3. Keterbatasan Agregasi: Pemeringkatan provinsi menggunakan data agregat BPS pada tingkat provinsi, bukan rata-rata sederhana dari seluruh kabupaten/kota di dalamnya.
 4. Karakteristik Deskriptif: Hubungan korelasi dan visualisasi spasial yang disajikan bersifat deskriptif asosiatif, bukan hubungan kausalitas (sebab-akibat).
